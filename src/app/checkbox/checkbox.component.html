@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Bath 01</h1>
+  <div>
+    <label *ngFor="let checkbox of checkboxes" class="checkbox-label">
+      <input type="checkbox" (change)="updateTextboxValue(checkbox)" [(ngModel)]="checkbox.checked" />
+      {{ checkbox.phrase }}
+    </label>
+  </div>
+  <div>
+    <label>Textbox Value:</label>
+    <input type="text" [(ngModel)]="textboxValue" />
+  </div>
+
+
+    <button (click)="goToDestination()">bath 2</button>
+
+</div>
